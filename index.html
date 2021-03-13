@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dairy plant</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <script>
+            function calc(){
+                var a=perseInt (document.getElementById("A").value);
+                var b=perseInt (document.getElementById("B").value);
+                // var c=perseInt (document.getElementById("C").value);
+                // var d=perseInt (document.getElementById("D").value);
+                var oper=document.getElementById("total").value;
+
+                if(oper === '+'){
+                    document.getElementById("results").value =a+b+c+d;
+                }
+                if(oper === '*'){
+                    document.getElementById("results").value =45(a+b+c+d);
+                }
+                
+            }
+        </script>
+    </head>
+    
+
+    <body>
+        <input type="text" id="shedA"/><br/><br/>
+        <input type="text" id="shedB"/><br/><br/>
+        <!-- <input type="text" id="shedC"/><br/><br/>
+        <input type="text" id="shedD"/><br/><br/> -->
+
+        
+        <select id="total">
+            <option value = "+" >+</option>
+            <option value = "*" >*</option>
+        </select>
+        <button onclick="calc();">=</button>
+        <input type="text" id="results"/>
+        
+    </body>
+</html>
